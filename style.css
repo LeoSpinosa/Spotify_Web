@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 3fr 8fr;
+    grid-template-rows: 1.5fr 8fr;
+    grid-template-areas: 
+    "aside header"
+    "section main";
+    gap: 10px;
+    padding: 10px;
+}
+
+
+header{
+    grid-area: header;
+    background-color: #121212;
+    align-items: center;
+}
+
+.navbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.icons_navbar{
+    cursor: pointer;
+}
+.name_navbar{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.enter{
+    color: black;
+    padding: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #121212;
+}
+
+.icons_elements{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.name_elements{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    cursor: pointer;
+}
+
+section{
+    grid-area: section;
+    background-color: #121212;
+}
+
+.library{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.icons_section{
+    display: flex;
+    gap: 10px;
+}
+
+.name_section{
+    color: white;
+}
+
+.boxes_section{
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 200px 200px;
+    gap: 20px;
+    padding: 10px;
+    
+}
+
+.box_section{
+    background-color: #242424;
+    border-radius: 10px;
+}
+
+.description_playlist{
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.create{
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    width: 110px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.description_podcast{
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.podcast{
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    width: 150px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main{
+    grid-area: main;
+    background-color: #121212;
+    
+}
+
+.title_main{
+    color: white;
+    padding-left: 20px;
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    justify-content: center;
+
+}
+
+.box{
+    background-color: #242424;
+    height: 220px;
+    width: 180px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 6px;
+}
+
+.title{
+    color: white;
+}
+
+.description{
+    color: var(--text-subdued,#6a6a6a);
+}
+
+footer{
+    background: linear-gradient(90deg,#af2896,#509bf5);
+    color: white;
+    padding: 5px;
+    padding-right: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invite{
+    color: black;
+    padding: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+
+
+
+
+
